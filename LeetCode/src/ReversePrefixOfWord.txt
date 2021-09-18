@@ -1,0 +1,12 @@
+2000. Reverse Prefix of Word
+
+solution:- 
+class Solution:
+    def reversePrefix(self, word: str, ch: str) -> str:
+        index=word.find(ch)
+        if ch in word:
+            s=word[0:index+1][::-1]
+            return s+word[index+1:len(word)]
+        else:
+            return word
+        
