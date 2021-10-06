@@ -1,0 +1,11 @@
+public static void addNodeAtBegin(int value){
+    ListNode newNode=new ListNode(value);
+    newNode.next=head;
+    head=newNode;
+}
+public static void main(String[] args){
+       Main sll=new Main();
+       sll.addNodeAtBegin(11);
+       sll.addNodeAtBegin(12);
+       sll.addNodeAtBegin(13);
+}
