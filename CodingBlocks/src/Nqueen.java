@@ -1,3 +1,5 @@
+package CodingBlocks.src;
+
 public class Nqueen {
     static int count;
     private static boolean canPlaced(int[][] board, int cr, int cc, int n) {

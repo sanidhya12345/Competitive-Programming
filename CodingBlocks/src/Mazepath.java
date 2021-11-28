@@ -1,3 +1,5 @@
+package CodingBlocks.src;
+
 import java.util.Scanner;
 
 public class Mazepath {
