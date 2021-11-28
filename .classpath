@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="StackDemo/src/|DAA/src/|FinalSheet450/src/|Algorithms/src/|Sorting/src/|BubbleSort/src/|LinkedListDemo/src/|CodingBlocks/src/|LeetCode/src/|QueueDemo/src/|Binary search/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="Algorithms/src"/>
+	<classpathentry kind="src" path="Binary search/src"/>
+	<classpathentry kind="src" path="BubbleSort/src"/>
+	<classpathentry kind="src" path="CodingBlocks/src"/>
+	<classpathentry kind="src" path="DAA/src"/>
+	<classpathentry kind="src" path="FinalSheet450/src"/>
+	<classpathentry kind="src" path="LeetCode/src"/>
+	<classpathentry kind="src" path="LinkedListDemo/src"/>
+	<classpathentry kind="src" path="QueueDemo/src"/>
+	<classpathentry kind="src" path="Sorting/src"/>
+	<classpathentry kind="src" path="StackDemo/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
