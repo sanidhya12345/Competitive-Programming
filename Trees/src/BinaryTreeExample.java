@@ -41,9 +41,32 @@ public class BinaryTreeExample {
         preorder(root.left);
         preorder(root.right);
     }
+    public void inorder(TreeNode root){
+        if (root==null){
+            return;
+        }
+        inorder(root.left);
+        System.out.print(root.data+" ");
+        inorder(root.right);
+    }
+    public void postorder(TreeNode root){
+        if (root==null){
+            return;
+        }
+        postorder(root.left);
+        postorder(root.right);
+        System.out.print(root.data+" ");
+    }
     public static void main(String[] args) {
         BinaryTreeExample tree=new BinaryTreeExample();
         TreeNode root=tree.createBinaryTree();
+        System.out.println("Pre-Order Traversal of the tree....");
         tree.preorder(root);
+        System.out.println();
+        System.out.println("In-Order Traversal of the tree....");
+        tree.inorder(root);
+        System.out.println();
+        System.out.println("Post-Order Traversal of the tree....");
+        tree.postorder(root);
     }
 }
