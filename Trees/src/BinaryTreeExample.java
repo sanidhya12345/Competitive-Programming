@@ -1,5 +1,8 @@
+import java.sql.SQLOutput;
+import java.util.Stack;
+
 public class BinaryTreeExample {
-    private static TreeNode root;
+    public static TreeNode root;
     private static class TreeNode{
         private TreeNode left;
         private TreeNode right;
@@ -41,6 +44,23 @@ public class BinaryTreeExample {
         preorder(root.left);
         preorder(root.right);
     }
+    public void preorderIterative(TreeNode root){
+        if (root==null){
+            return;
+        }
+        Stack<TreeNode> stack=new Stack<>();
+        stack.push(root);
+        while(!stack.isEmpty()) {
+            TreeNode temp = stack.pop();
+            System.out.print(temp.data + " ");
+            if (temp.right != null) {
+                stack.push(temp.right);
+            }
+            if (temp.left != null) {
+                stack.push(temp.left);
+            }
+        }
+    }
     public void inorder(TreeNode root){
         if (root==null){
             return;
@@ -68,5 +88,8 @@ public class BinaryTreeExample {
         System.out.println();
         System.out.println("Post-Order Traversal of the tree....");
         tree.postorder(root);
+        System.out.println();
+        System.out.println("Pre-order Traversal using iteration....");
+        tree.preorderIterative(root);
     }
 }
