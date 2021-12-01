@@ -13,7 +13,7 @@ public class LinkedList {
         }
     }
 
-    public  void addNode(int data) {
+    public  void addNodeAtLast(int data) {
         Node newNode=new Node(data);
         if (head==null) {
             head=newNode;
@@ -26,6 +26,33 @@ public class LinkedList {
             currentNode.next=newNode;
         }
 
+    }
+    public void addNodeAtBegin(int data) {
+        Node newNode=new Node(data);
+        newNode.next=head;
+        head=newNode;
+    }
+    public void deleteNodeAtLast() {
+        if (head==null) {
+            System.out.println("List is empty..");
+        }
+        else {
+            Node curNode=head;
+            while (curNode.next.next!=null) {
+                curNode=curNode.next;
+            }
+            curNode.next=null;
+        }
+    }
+    public void deleteNodeAtBegin() {
+        if (head==null) {
+            System.out.println("List is empty...");
+        }
+        else {
+            Node tempNode=head;
+            head=head.next;
+            tempNode.next=null;
+        }
     }
     public void printLL() {
         //Node lastData=null;
@@ -51,14 +78,21 @@ public class LinkedList {
         // TODO Auto-generated method stub
 
         LinkedList linkedList=new LinkedList();
-        linkedList.addNode(12);
-        linkedList.addNode(13);
-        linkedList.addNode(14);
-        linkedList.addNode(15);
-        linkedList.addNode(16);
+        linkedList.addNodeAtLast(12);
+        linkedList.addNodeAtLast(13);
+        linkedList.addNodeAtLast(14);
+        linkedList.addNodeAtLast(15);
+        linkedList.addNodeAtLast(16);
         linkedList.printLL();
-        linkedList.addNode(17);
-        linkedList.addNode(18);
+        linkedList.addNodeAtLast(17);
+        linkedList.addNodeAtLast(18);
         linkedList.printLL();
+        linkedList.deleteNodeAtLast();
+        linkedList.printLL();
+        linkedList.deleteNodeAtBegin();
+        linkedList.printLL();
+        linkedList.addNodeAtBegin(10);
+        linkedList.printLL();
+
     }
 }
