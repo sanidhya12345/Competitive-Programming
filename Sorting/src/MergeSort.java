@@ -1,5 +1,7 @@
+package Sorting.src;
+
 // "static void main" must be defined in a public class.
-public class Main {
+class Main2 {
   public static void merge(int arr[], int l, int m, int r)
     {
         int n1 = m - l + 1;

@@ -1,12 +1,14 @@
+package LinkedListDemo.src;
+
 import java.util.*;
-class Nodee{
+class Nodeee{
     int rollno;
-    Nodee previous;
-    Nodee next;
+    Nodeee previous;
+    Nodeee next;
 }
 public class DoublyLinkedList
 {
-    Nodee start;
+    Nodeee start;
     DoublyLinkedList()
     {
       start=null;
@@ -16,7 +18,7 @@ public class DoublyLinkedList
         System.out.println("Enter roll number");
         Scanner sc2=new Scanner(System.in);
         int rn=sc2.nextInt();
-        Nodee newnode=new Nodee();
+        Nodeee newnode=new Nodeee();
         newnode.rollno=rn;
         newnode.previous=null;
         newnode.next=null;
@@ -26,7 +28,7 @@ public class DoublyLinkedList
         }
         else
         {
-            Nodee current=start;
+            Nodeee current=start;
             while(current.next!=null)
             {
                 current=current.next;
@@ -57,7 +59,7 @@ public class DoublyLinkedList
         }
         else
         {
-           Nodee current=start;
+           Nodeee current=start;
             while(current.next.next!=null)
             {
                 current=current.next;
@@ -86,7 +88,7 @@ public class DoublyLinkedList
         {
             //forward
             System.out.println("-----------forward-----------");
-            Nodee current;
+            Nodeee current;
             for (current=start;current.next!=null;current=current.next)
             {
                 System.out.print(current.rollno+" ");
@@ -96,7 +98,7 @@ public class DoublyLinkedList
             // System.out.println(" "+current.rollno);
             //backward
             System.out.println("-----------backward-----------");
-            Nodee last;
+            Nodeee last;
             for (last=current;last!=null;last=last.previous)
             {
                 System.out.print(last.rollno+" ");
@@ -116,7 +118,7 @@ public class DoublyLinkedList
             Scanner sc3=new Scanner(System.in);
             int sea=sc3.nextInt();
             int count=0;
-            for (Nodee current=start;current!=null;current=current.next)
+            for (Nodeee current=start;current!=null;current=current.next)
             {
                 if (current.rollno==sea)
                 {

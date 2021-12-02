@@ -1,11 +1,13 @@
+package StackDemo.src;
+
 import java.util.Scanner;
-class Node
+class Nodee
 {
     int data;
-    Node next;
+    Nodee next;
 }
 public class StackExampleLinkedList {
-    Node top;
+    Nodee top;
     StackExampleLinkedList()
     {
         top=null;
@@ -16,7 +18,7 @@ public class StackExampleLinkedList {
         Scanner sc2=new Scanner(System.in);
         int newitem= sc2.nextInt();
 
-        Node newnode=new Node();
+        Nodee newnode=new Nodee();
         newnode.data=newitem;
         newnode.next=top;
 
@@ -43,7 +45,7 @@ public class StackExampleLinkedList {
         }
         else
         {
-            Node current;
+            Nodee current;
             for (current=top;current!=null;current=current.next)
             {
                 System.out.println(current.data);

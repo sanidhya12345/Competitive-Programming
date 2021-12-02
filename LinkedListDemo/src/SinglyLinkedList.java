@@ -1,10 +1,12 @@
+package LinkedListDemo.src;
+
 import java.util.*;
-class Node{
+class Node2{
     int rollno;
-    Node next;
+    Node2 next;
 }
 public class SinglyLinkedList {
-    Node start;
+    Node2 start;
     SinglyLinkedList()
     {
         start=null;
@@ -15,7 +17,7 @@ public class SinglyLinkedList {
         Scanner sc2=new Scanner(System.in);
         int rn=sc2.nextInt();
 
-        Node newnode=new Node();
+        Node2 newnode=new Node2();
         newnode.rollno=rn;
         newnode.next=null;
         if (start==null)
@@ -24,7 +26,7 @@ public class SinglyLinkedList {
         }
         else
         {
-            Node current=start;
+            Node2 current=start;
             while(current.next!=null)
             {
                 current=current.next;
@@ -41,7 +43,7 @@ public class SinglyLinkedList {
         }
         else
         {
-            Node current=start;
+            Node2 current=start;
             while(current.next.next!=null)
             {
                 current=current.next;
@@ -57,7 +59,7 @@ public class SinglyLinkedList {
         }
         else
         {
-            Node current;
+            Node2 current;
             for (current=start;current!=null;current=current.next)
             {
                 System.out.print(current.rollno+" ");
@@ -77,7 +79,7 @@ public class SinglyLinkedList {
             Scanner sc3=new Scanner(System.in);
             int sea=sc3.nextInt();
 
-            Node current;
+            Node2 current;
             int count=0;
             for ( current = start; current!=null; current=current.next)
             {
