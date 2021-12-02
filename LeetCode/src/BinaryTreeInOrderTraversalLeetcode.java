@@ -8,7 +8,6 @@ public class BinaryTreeInOrderTraversalLeetcode {
         inorder(root, list);
         return list;
     }
-
     public void inorder(TreeNode root, List<Integer> list) {
         if(root == null) return;
         inorder(root.left, list);
