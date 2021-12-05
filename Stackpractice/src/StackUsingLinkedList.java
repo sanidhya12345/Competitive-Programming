@@ -35,6 +35,16 @@ public class StackUsingLinkedList {
         System.out.println("Element Deleted:- "+top.data);
         top=top.next;
     }
+    public void getMin(){
+      int min=top.data;
+      for (Node curNode=top;curNode!=null ;curNode=curNode.next) {
+        if (min>curNode.data) {
+          min=curNode.data;
+        }
+      }
+      System.out.println(min);
+
+    }
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         StackUsingLinkedList stackUsingLinkedList=new StackUsingLinkedList();
@@ -45,6 +55,7 @@ public class StackUsingLinkedList {
         stackUsingLinkedList.traverse();
         stackUsingLinkedList.pop();
         stackUsingLinkedList.traverse();
+        stackUsingLinkedList.getMin();
     }
 
 }
