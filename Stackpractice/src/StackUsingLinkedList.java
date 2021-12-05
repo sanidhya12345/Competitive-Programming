@@ -1,3 +1,4 @@
+package Stackpractice.src;
 public class StackUsingLinkedList {
     private  Node top=null;
     public static class Node{
