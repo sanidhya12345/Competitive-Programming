@@ -6,7 +6,7 @@ public class BinaryTreeExample {
     private static class TreeNode{
         private TreeNode left;
         private TreeNode right;
-        private int data;
+        private final int data;
 
         public TreeNode(int data){
             this.data=data;
@@ -60,6 +60,7 @@ public class BinaryTreeExample {
                 stack.push(temp.left);
             }
         }
+        System.out.println();
     }
     //Inorder traversal of tree....
     /*
