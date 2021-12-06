@@ -76,6 +76,26 @@ public class BinaryTreeExample {
         System.out.print(root.data+" ");
         inorder(root.right);
     }
+
+    public void inorderIterativeTraversal(TreeNode root){
+        if(root==null){
+            return;
+        }
+        Stack<TreeNode> stack=new Stack<>();
+        TreeNode temp=root;
+        while(!stack.isEmpty() || temp!=null){
+            if (temp!=null){
+                stack.push(temp);
+                temp=temp.left;
+            }
+            else{
+                temp=stack.pop();
+                System.out.print(temp.data+" ");
+                temp=temp.right;
+            }
+        }
+        System.out.println();
+    }
     public void postorder(TreeNode root){
         if (root==null){
             return;
@@ -98,5 +118,7 @@ public class BinaryTreeExample {
         System.out.println();
         System.out.println("Pre-order Traversal using iteration....");
         tree.preorderIterative(root);
+        System.out.println("Inorder Traversal using iteration....");
+        tree.inorderIterativeTraversal(root);
     }
 }
