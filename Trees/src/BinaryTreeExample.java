@@ -61,6 +61,12 @@ public class BinaryTreeExample {
             }
         }
     }
+    //Inorder traversal of tree....
+    /*
+    1.traversing the left subtree.
+    2.visiting the root.
+    3.traversing the right subtree.
+    * */
     public void inorder(TreeNode root){
         if (root==null){
             return;
