@@ -105,13 +105,20 @@ public class SinglyQueueArray
             int ch= sc.nextInt();
             switch(ch)
             {
-                case 1 ->obj.insert();
-                case 2 ->obj.delete();
-                case 3 ->obj.traverse();
-                case 4 ->System.exit(0);
-                case 5 ->obj.peak();
-                case 6 -> obj.poll();
-                default -> System.out.println("Wrong choice");
+                case 1 :obj.insert();
+                        break;
+                case 2 :obj.delete();
+                        break;
+                case 3 :obj.traverse();
+                        break;
+                case 4 :System.exit(0);
+                        break;
+                case 5 :obj.peak();
+                        break;
+                case 6 : obj.poll();
+                        break;
+                default : System.out.println("Wrong choice");
+                        break;
             }
         }
     }
