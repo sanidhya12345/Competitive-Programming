@@ -38,7 +38,7 @@ public class DFS{
         dfs.addEdge(2, 0);
         dfs.addEdge(2, 3);
         dfs.addEdge(3, 3);
-        System.out.println("Following is Breadth First Traversal "+"(starting from vertex 2)");
+        System.out.println("Following is Depth First Traversal "+"(starting from vertex 2)");
         dfs.depth(2);
       }
 }
