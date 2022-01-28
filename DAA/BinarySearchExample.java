@@ -1,4 +1,4 @@
-package DAA.src;
+package DAA;
 
 import java.util.Scanner;
 
