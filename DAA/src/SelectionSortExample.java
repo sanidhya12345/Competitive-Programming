@@ -1,4 +1,4 @@
-package Sorting.src;
+package DAA.src;
 
 import java.util.Scanner;
 
