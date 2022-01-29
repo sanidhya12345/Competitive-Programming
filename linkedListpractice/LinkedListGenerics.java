@@ -1,5 +1,5 @@
 package linkedListpractice;
-
+import java.util.*;
 public class LinkedListGenerics<T>{
       private ListNode<T> head=null;
       public static class ListNode<T>{
@@ -35,6 +35,21 @@ public class LinkedListGenerics<T>{
           curNode.next=null;
         }
       }
+
+      public void deleteDups(){
+        HashSet<T> set=new HashSet<>();
+        ListNode previous=null;
+        while(head!=null){
+          if(set.contains(head.data)){
+            previous.next=head.next;
+          }
+          else{
+            set.add(head.data);
+            previous=head;
+          }
+        head=head.next;
+        }
+      }
       public void traverseList(){
         if (head==null) {
           System.out.println("list is empty...");
@@ -53,6 +68,8 @@ public class LinkedListGenerics<T>{
         linkedlist.addNode(20);
         linkedlist.addNode(30);
         linkedlist.addNode(40);
+        linkedlist.traverseList();
+        linkedlist.deleteDups();
         linkedlist.traverseList();
         linkedlist.deleteNode();
         linkedlist.traverseList();
