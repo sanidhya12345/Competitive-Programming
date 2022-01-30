@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.*;
 import java.io.*;
 
-    public class Solution
+    class Solution
     {
         static long f(long n){
             long sum = 0;
