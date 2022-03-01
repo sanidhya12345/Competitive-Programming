@@ -27,6 +27,9 @@ public class PathSum {
         return root;
     }
     public boolean hasPathSum(TreeNode root,int sum){
+        if(root==null){
+            return false;
+        }
         boolean ans=false;
         int sub=sum-root.data;
         if(sub==0 && root.left==null && root.right==null){
