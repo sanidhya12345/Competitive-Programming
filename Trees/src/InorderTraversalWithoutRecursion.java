@@ -1,3 +1,7 @@
+/*
+ * Copyright (c)  3/1/22, 4:29 PM by Sanidhya Varshney.
+ */
+
 import java.util.Stack;
 public class InorderTraversalWithoutRecursion {
     public static TreeNode root;
