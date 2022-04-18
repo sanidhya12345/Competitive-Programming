@@ -14,36 +14,16 @@
  * }
  */
 class Solution {
-    ArrayList<String> list=new ArrayList<>();
-    private boolean isLeaf(TreeNode root){
-        return root.left==null && root.right==null;
-    }
-    private void pathprint(TreeNode root,Deque<Integer> path){
-        if(root==null){
-            return;
-        }
-        path.addLast(root.val);
-        if (isLeaf(root)) {
-            helper(path);
-        }
-        pathprint(root.left, path);
-        pathprint(root.right, path);
-        path.removeLast();
-    }
     public int sumNumbers(TreeNode root) {
-        Deque<Integer> path = new ArrayDeque<>();
-        pathprint(root, path);
-        int sum=0;
-        for(String i:list){
-            sum+=Integer.parseInt(i);
-        }
-        return sum;
+        return helper(root,0);
     }
-    private void helper(Deque<Integer> path){
-        String pathstring="";
-        for(int i:path){
-            pathstring+=i;
+    public int helper(TreeNode root,int sum){
+        if(root==null) return 0;
+        if(root.left==null && root.right==null){
+            return sum*10+root.val;
         }
-        list.add(pathstring);
+        int left=helper(root.left,sum*10+root.val);
+        int right=helper(root.right,sum*10+root.val);
+        return left+right;
     }
 }
