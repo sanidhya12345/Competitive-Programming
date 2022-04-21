@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CB_LL_ASSIGNMENT/CB_LL_ASSIGNMENT.iml" filepath="$PROJECT_DIR$/CB_LL_ASSIGNMENT/CB_LL_ASSIGNMENT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cb_trees/Cb_trees.iml" filepath="$PROJECT_DIR$/Cb_trees/Cb_trees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Competitive-Programming-duplicate.iml" filepath="$PROJECT_DIR$/Competitive-Programming-duplicate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Matrix/Matrix.iml" filepath="$PROJECT_DIR$/Matrix/Matrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stackpractice/Stackpractice.iml" filepath="$PROJECT_DIR$/Stackpractice/Stackpractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trees/Trees.iml" filepath="$PROJECT_DIR$/Trees/Trees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/programs/programs.iml" filepath="$PROJECT_DIR$/programs/programs.iml" />
+    </modules>
+  </component>
+</project>

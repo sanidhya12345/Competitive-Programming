@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="sanidhya12345" pattern="src[Competitive-Programming-duplicate]:*..*||src[Trees]:*..*||src[programs]:*..*||src[Stackpractice]:*..*||lib:*..*||test:*..*||[Competitive-Programming-duplicate]:*..*||[Trees]:*..*" />
+</component>
