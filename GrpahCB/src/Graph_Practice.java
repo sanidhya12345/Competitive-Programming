@@ -96,5 +96,6 @@ public class Graph_Practice {
         graph.addEdge(6, 7, 7);
         graph.PrintAllPath(1,6,new HashSet<>(),"");
         System.out.println(graph.BFS(1,5));
+        System.out.println(graph.DFS(1,6));
     }
 }
