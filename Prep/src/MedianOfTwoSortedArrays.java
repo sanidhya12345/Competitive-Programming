@@ -22,7 +22,7 @@ public class MedianOfTwoSortedArrays {
             return A[aStart+k];
         }
         if(k==0){
-            return Math.max(A[aStart], B[bStart]);
+            return A[aStart]<B[bStart]?A[aStart] :B[bStart];
         }
 
         int aMid=aLen*k/(aLen+bLen);
@@ -44,8 +44,8 @@ public class MedianOfTwoSortedArrays {
         return findk(A,B,k,aStart,aEnd,bStart,bEnd);
     }
     public static void main(String[] args) {
-        int [] A={1,2,3,4,5};
-        int [] B={8,9,12,34,35};
+        int [] A={1,3};
+        int [] B={2};
         System.out.println(findMedian(A,B));
     }
 }
