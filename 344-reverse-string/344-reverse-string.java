@@ -1,14 +1,14 @@
 class Solution {
-     public void reverseString(char[] s) {
-        reverse(s, 0, s.length-1);
+    public void reverseString(char[] s) {
+       reverse(s,0,s.length-1);
     }
-    void reverse(char[] arr, int f, int s){
-        if(f>s){
+    private  void reverse(char [] s,int start,int end){
+        if(start>=end){
             return;
         }
-        char temp = arr[f];
-        arr[f] = arr[s];
-        arr[s] = temp;
-        reverse(arr, ++f, --s);
+            char temp=s[start];
+            s[start]=s[end];
+            s[end]=temp;
+        reverse(s,start+1,end-1);
     }
 }
