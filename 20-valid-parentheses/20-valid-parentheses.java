@@ -1,7 +1,7 @@
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack=new Stack<>();
-        HashMap<Character,Character> map=new HashMap<>();
+        Map<Character,Character> map=new HashMap<>();
         map.put(')','(');
         map.put('}','{');
         map.put(']','[');
@@ -12,7 +12,7 @@ class Solution {
             else if(map.containsKey(c) && !stack.isEmpty() && stack.peek()==map.get(c)){
                 stack.pop();
             }
-            else{
+            else {
                 return false;
             }
         }
