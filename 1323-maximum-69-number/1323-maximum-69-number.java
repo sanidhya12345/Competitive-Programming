@@ -3,7 +3,7 @@ class Solution {
         if(num==9 || num==99 || num==999 || num==9999 || num==9999 || num==99999){
             return num;
         }
-        ArrayList<Integer> list=new ArrayList<>();
+        int max=num;
         String number=Integer.toString(num);
         int i=0;
         while(i<number.length()){
@@ -15,9 +15,10 @@ class Solution {
                 chars[i]='9';
             }
             String str=new String(chars);
-            list.add(Integer.parseInt(str));
+            int val=Integer.parseInt(str);
+            max=Math.max(max,val);
             i++;
         }
-        return Collections.max(list);
+        return max;
     }
 }
