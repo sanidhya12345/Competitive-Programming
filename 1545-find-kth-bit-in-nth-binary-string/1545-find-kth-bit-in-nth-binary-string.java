@@ -1,32 +1,28 @@
 class Solution {
-    public char findKthBit(int n, int k) {
-        
-        String[] str = new String[n];
-        str[0]="0";
-        for(int i=1;i<n;i++){
-            str[i]=formstr(str[i-1]);
-        }
-        return str[n-1].charAt(k-1);
-        
-        
-    }
-    private String formstr(String sg){
-        return sg + "1" + reverse(inverse(sg));
-        
-    }
-    private String reverse(String sg){
-        return new StringBuilder(sg).reverse().toString();
-    }
-    private String inverse(String sg){
-        StringBuilder sb = new StringBuilder();
-        for(char c: sg.toCharArray()){
-            if(c == '1'){
-                sb.append("0");
+   private  String invert(String s){
+        char [] array=s.toCharArray();
+        for(int i=0;i<s.length();i++){
+            if(array[i]=='1'){
+                array[i]='0';
             }
             else{
-                sb.append("1");
+                array[i]='1';
             }
         }
-        return sb.toString();
+        return new String(array);
+    }
+    private  String reverse(String s){
+        StringBuilder str=new StringBuilder(s);
+        return str.reverse().toString();
+    }
+    private  String func(int i){
+        if(i==0){
+            return "0";
+        }
+        return func(i-1)+"1"+reverse(invert(func(i-1)));
+    }
+    public char findKthBit(int n, int k) {
+        String s=func(n-1);
+        return s.charAt(k-1);
     }
 }
