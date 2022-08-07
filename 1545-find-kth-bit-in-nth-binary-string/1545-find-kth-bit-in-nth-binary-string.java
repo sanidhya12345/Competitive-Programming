@@ -15,14 +15,14 @@ class Solution {
         StringBuilder str=new StringBuilder(s);
         return str.reverse().toString();
     }
-    private  String func(int i){
-        if(i==0){
-            return "0";
-        }
-        return func(i-1)+"1"+reverse(invert(func(i-1)));
-    }
+    
     public char findKthBit(int n, int k) {
-        String s=func(n-1);
-        return s.charAt(k-1);
+        String [] array=new String[n];
+        array[0]="0";
+        for(int i=1;i<n;i++){
+            array[i]=array[i-1]+"1"+reverse(invert(array[i-1]));
+        }
+        
+        return array[n-1].charAt(k-1);
     }
 }
