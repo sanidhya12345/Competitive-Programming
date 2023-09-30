@@ -1,3 +1,5 @@
+package Prep.src;
+
 import java.util.Scanner;
 
 public class MinimumCharsAtFrontToMakeStringPalindriome {

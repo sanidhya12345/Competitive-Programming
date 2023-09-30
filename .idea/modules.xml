@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CB_LL_ASSIGNMENT/CB_LL_ASSIGNMENT.iml" filepath="$PROJECT_DIR$/CB_LL_ASSIGNMENT/CB_LL_ASSIGNMENT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSES_Problem_Set/CSES_Problem_Set.iml" filepath="$PROJECT_DIR$/CSES_Problem_Set/CSES_Problem_Set.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cb_trees/Cb_trees.iml" filepath="$PROJECT_DIR$/Cb_trees/Cb_trees.iml" />
       <module fileurl="file://$PROJECT_DIR$/Competitive-Programming-duplicate.iml" filepath="$PROJECT_DIR$/Competitive-Programming-duplicate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Matrix/Matrix.iml" filepath="$PROJECT_DIR$/Matrix/Matrix.iml" />
