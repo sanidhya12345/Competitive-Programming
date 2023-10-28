@@ -1,3 +1,4 @@
+package Prep.src;
 import java.util.Scanner;
 
 public class Almost_TernaryMatrix {

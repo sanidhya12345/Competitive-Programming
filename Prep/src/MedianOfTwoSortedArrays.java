@@ -1,3 +1,4 @@
+package Prep.src;
 public class MedianOfTwoSortedArrays {
     public static double findMedian(int [] A,int [] B){
         int m=A.length;

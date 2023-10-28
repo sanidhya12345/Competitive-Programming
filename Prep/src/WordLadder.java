@@ -1,3 +1,4 @@
+package Prep.src;
 import java.util.*;
 
 class WordNode{
